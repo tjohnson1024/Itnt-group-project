@@ -1,1 +1,111 @@
-
+IT 2750 – Scripting Fundamentals for Cybersecurity
+Student: Ahmad , Ta’ron Johnson
+1. Goals:
+This project aims at designing a tool for a cybersecurity-focused Python application that
+will execute two common tasks: a password generator and an OSINT-style pattern finder.
+First, the password generator will produce secure, randomized passwords in compliance
+with strict security requirements. Second, the pattern finder will look through files for
+phone numbers and email addresses. The two functions support real-world cybersecurity
+workflows, such as strengthening user authentication and collecting conta ct information
+during investigations.
+The project solves modern problems such as weak passwords, poor password creation by
+humans, and the task of having to go through large files manually in search of sensitive
+identifying information. This application enhances efficacy by automating most of these
+tasks, reduces mistakes, and supports better security hygiene. Our vision for this project is
+to build a simple yet powerful command-line tool that will enable users to generate
+secured passwords quickly and pull important data out of files.
+The application will be well-guided, with easy navigation through the menu and well-
+presented output. Enhances current. The utilization of poor password practices causes
+many manual processes.
+2. User Personas
+Persona 1: Alex – Cybersecurity Analyst
+Alex works as a small Managed Security Service Provider. He is supposed to assist his
+clients in updating their authentication systems among other functions. Most of the time,
+he has to make strong passwords for temporary system accounts and interns. He also
+reviews logos and files during internal audits. Alex uses his tool to quickly generate secure
+passwords and extract emails from suspicious documents during any investigation.
+Persona 2: Sarah Thompson – IT Help Desk Technician
+Sarah works in a medium-sized company, taking care of employees' onboarding. She has
+to create new accounts and is supposed to follow strict password guideness. She also
+receives test files from users in regard to phishing emails; she needs to extract the contact
+information efficiently. Sarah uses this application because it saves her time and prevents
+mistakes during daily tasks.
+Persona 3: Lee – Cybersecurity Student
+Micheel is attending an introductory course in cybersecurity and was still learning python.
+He needed simple, reliable tools to practice the concept of OSINT and to improve his
+knowledge regarding secure authentication. Application usage is while studying and
+experimenting with different security requirements.
+3. User Stories
+As a cybersecurity analyst, I want to generate strong passwords so that I can enforce
+secure authentication policies.
+As a cybersecurity analyst, I want to create strong passwords so that I can set security
+authentication policies.
+In this regard, I want to scan documents containing phone numbers and emails as an IT
+technician to swiftly gather important information related to investigations.
+I would like a clear interface as a student so that I can understand how it works, and I could
+learn from it.
+As a security professional, I want the tool to validate the inputs so I can avoid errors or
+crashes when working with large files.
+As an end user, I want the tool to return formatted search results so that I can analyze
+them easily.
+4. Feature Descriptions
+Feature 1: Password Generator
+This feature can be assessed by a user through the main menu option of “Generate a
+Password". "From the main menu, the user selects the option “generate password”, this
+tool is helping the user create a string, random password that will include letters,
+numbers, and special characters. This tool helps the user avoid weak passwords and
+makes it easier for him to follow security rules. The user can input the length they want it to
+be. Then, a secure randomly generated password shows up.
+Feature 2: OSINT Tool Email and Phone Number Finder
+From the main menu, the user chooses to do: Find Emails and Phone Numbers. The tool
+reads a file and searches for emails and phone numbers using pattern matching, known as
+regrex. It saves time and helps in avoiding mistakes while manually searching within large
+documents. All the input is just the file path provided by the user, with the output being a
+list of all phone numbers and email addresses present in the file. If no results, it states no
+results found.
+5. Wireframes / Walkthrough
+The application is menu-based, and its core structure is based on a command-line tool.
+When running the program, the first thing the user will encounter is the main screen with all
+the available options that can be run by the program, using numbers to represent each
+option. The layout of the screen is simple and easy to read, thus helping beginners follow it
+without confusion.
+- Main Menu Experience
+After the program is launched, the user is greeted with a title and a list of choices. They can
+select from actions such as generating a password or scanning a file for emails and phone
+numbers. The user enters the numbers that corresponds to the feature they want to use.
+- Password Generator Walkthrough
+The first option is the password generator option. It takes them to a specific screen, where
+it first explains what the tol does; the user has to type in the length of the password they
+want to create and then ask for which character the user wants to choose. After that, the
+program will randomly create a password that includes upper and lower case letters,
+numbers, and special characters. Then, that result will appear clearly so the user can copy
+or save it. After that, the program will take the user back to the main menu.
+- Email and Phone Number Finder Walkthrough
+Second option the program has is to scan a filre for email addresess and phone numbers,
+they’re taken to a new screen that explains what the tool will do. The user is then asked to
+enter the file path if the document they want to scan. The program get in to the file and
+finds the email addresses and phine numners, then display them in an orgonized list so the
+user can easily review the inofrmation. If no resulys are found, the program give the user
+clearly staes that nothing was decatred in the file. Once the resukes are shwn the user is
+returened automatically to the main menu.
+- Return to Main Menu and Exit
+The last option the program has is always guide the user back to the main menu. This
+allows them to choose another task or exit the program. The exit potion cleanly closes the
+application without errors.
+6. Non-Functional Requirements
+• The menu has to be simple, clear, and user-friendly for beginners. Every option
+should contain instructions as to what he/she has to do next.
+• Our program menu is simple, clear, and easy for beginners. Each option has
+instructions that explain what the user needs to do next.
+• Very fast: it responds instantly for small files and remains stable when scanning
+large files.
+• This program handles the files with trust that no files are shared, missing files, or
+unexpected user behavior will never attempt to crash it.
+• The passwords the program generates include random characters and meet
+minimum security standards.
+7. Future Iterations Future versions of this application could
+include:
+Return results as a text file, to facilitate reporting. More OSINT tools, such as finding IP
+addresses or URLs Advanced options for passwords, such as choosing certain characters
+or generating multiple options at once. Database storage allows users to save and track all
+the generated passwords.
